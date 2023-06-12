@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code with Shivkumar-Educobot</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Code With Shivkumar-Educobot</h1>
+        <nav></nav>
+    </header>
+    <main>
+        <section class="MainInfos">
+            <div class="searchSection">
+                <h1>Hello Shivkumar, Lets Start Todays Work</h1>
+                <form method="GET" action="https://www.google.com/search">
+                    <input type="text" name="q" value="" placeholder="Enter Query To be Search on Google" />
+                </form>
+                <div class="time" id="time"></div>
+            </div>
+            <div class="Tasklist">
+                <h1>Your Notes ( <span id="count"> 15</span> Notes)</h1>
+                <div id="TaskListContainer">
+                </div>
+            </div>
+        </section>
+
+        <div class="HorizontalScroll">
+            <h1>Desktop Views</h1>
+            <section class="WatchingSitesinitals">
+                <div class="site">
+                    <h1>http://localhost:3000/</h1>
+                    <iframe src="http://localhost:3000/" width="1440" height="900"></iframe>
+                </div>
+                <div class="site">
+                    <h1>http://5.78.76.254:3000/</h1>
+                    <iframe src="http://5.78.76.254:3000/" width="1440" height="900"></iframe>
+                </div>
+                <div class="site">
+                    <h1>https://educobot.com/</h1>
+                    <iframe src="https://educobot.com/" width="1440" height="900"></iframe>
+                </div>
+                <div class="site">
+                    <h1>https://faqchatbot.educobot.com/faqchatbot/shiv</h1>
+                    <iframe src="https://faqchatbot.educobot.com/faqchatbot/shiv" width="1440" height="900"></iframe>
+                </div>
+                <div class="site">
+                    <h1>https://teachable-machine-educobot.web.app/</h1>
+                    <iframe src="https://teachable-machine-educobot.web.app/" width="1440" height="900"></iframe>
+                </div>
+            </section>
+            <h1>Desktop Views</h1>
+            <section class="WatchingSites">
+                <div class="site">
+                    <h1>https://educobot.com/</h1>
+                    <iframe src="https://educobot.com/" width="1600" height="900"></iframe>
+                </div>
+                <div class="site">
+                    <h1>http://5.78.76.254:3000/</h1>
+                    <iframe src="http://5.78.76.254:3000/" width="1600" height="900"></iframe>
+                </div>
+                <div class="site">
+                    <h1>https://faqchatbot.educobot.com/faqchatbot/shiv</h1>
+                    <iframe src="https://faqchatbot.educobot.com/faqchatbot/shiv" width="1600" height="900"></iframe>
+                </div>
+                <div class="site">
+                    <h1>https://teachable-machine-educobot.web.app/</h1>
+                    <iframe src="https://teachable-machine-educobot.web.app/" width="1600" height="900"></iframe>
+                </div>
+            </section>
+            <h1>Mobile Views</h1>
+            <section class="WatchingSites">
+                <div class="site">
+                    <h1>https://educobot.com/</h1>
+                    <iframe src="https://educobot.com/" width="500" height="600"></iframe>
+                </div>
+                <div class="site">
+                    <h1>http://5.78.76.254:3000/</h1>
+                    <iframe src="http://5.78.76.254:3000/" width="500" height="600"></iframe>
+                </div>
+                <div class="site">
+                    <h1>https://faqchatbot.educobot.com/faqchatbot/shiv</h1>
+                    <iframe src="https://faqchatbot.educobot.com/faqchatbot/shiv" width="500" height="600"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="noteTakingButton" onclick="openInputWindow()">Take Note</div>
+        <h3>All Rights Are Reserved || Code with Shivkumar</h3>
+    </footer>
+
+    <div id="taskTakingWindow">
+        <div class="TaskInputForm">
+            <button class="backButton" onclick="closeInputWindow()">Go Back</button>
+            <input type="text" name="task" placeholder="Enter Note To Be Taken" id="taskInput"/>
+            <button onclick="addTasks()">Add Task</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js" defer></script>
+
+</html>

@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    border: none;
+    outline: none;
+    /* outline: 1px solid red; */
+    background: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-wrap: break-word;
+    position: x;
+}
+
+body{
+    color: white;
+    min-height: 100vh;
+    background: url("./Assets/Background0.jpg") no-repeat fixed;
+    background-size: cover;
+    width: 99VW;
+
+}
+
+header{
+    position: sticky;
+    background: #3b444b7d;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+.searchSection{
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.searchSection>h1{
+    margin: 30px 0;
+}
+
+.searchSection form input{
+    width: 700px;
+    border: 1px solid white;
+    border-bottom: 5px solid white;
+    padding: 10px 30px;
+    font-size: 25px;
+    border-radius: 30px;
+    background: white;
+    color: black;
+}
+
+.time{
+    font-size: 40px;
+    color: blue;
+    font-weight: 900;
+    padding: 20px;
+}
+
+.HorizontalScroll{
+    width: 99VW;
+    overflow-x: scroll;
+    padding: 10px;
+}
+
+.HorizontalScroll >h1{
+    text-align: center;
+    color: blue;
+    font-weight: bolder;
+}
+
+
+.WatchingSites, .WatchingSitesinitals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    min-width: 100vw;
+    width: max-content;
+    /* border: 5px solid red; */
+}
+
+.WatchingSitesinitals h1{
+    color: black;
+}
+
+.WatchingSitesinitals .site{
+    margin: 20px;
+    width: 300px ;
+    /* height: 200px; */
+}
+
+
+.WatchingSites .site{
+    margin: 10px;
+}
+
+.WatchingSitesinitals iframe{
+    /* width: 60%; */
+    /* height: 100%; */
+    -webkit-transform:scale(0.2);
+    margin: -350px;
+    margin-left: -570px;
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #3b444b;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.MainInfos{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.Tasklist{
+    /* border: 1px solid gray; */
+    margin: 10px;
+    height: 600px;
+    overflow-y: scroll;
+    padding: 15px;
+}
+.Tasklist >h1{
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.Tasklist .task{
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    background: blue;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+.Tasklist .task span{
+    display: block;
+    border: 1px solid gray;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin: 10px;
+    background: red;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+#TaskLIstCOntainer{
+    height: max-content;
+}
+
+
+.noteTakingButton{
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    background: green;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#taskTakingWindow{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.766);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.TaskInputForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TaskInputForm input{
+    min-width: 500px;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-bottom: 2px solid aqua;
+    color: black;
+}
+
+.TaskInputForm button{
+    padding: 10px 30px;
+    font-size: 25px;
+    margin: 20px;
+    border: 2px solid blue;
+    color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.backButton{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: coral;
+    color: white !important;
+    border: none !important;
+}
